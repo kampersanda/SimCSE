@@ -39,8 +39,8 @@ class STSEval(object):
             not_empty_idx = raw_scores != ''
 
             gs_scores = [float(x) for x in raw_scores[not_empty_idx]]
-            sent1 = np.array([s.split() for s in sent1])[not_empty_idx]
-            sent2 = np.array([s.split() for s in sent2])[not_empty_idx]
+            sent1 = np.array([s.split() for s in sent1], dtype=object)[not_empty_idx]
+            sent2 = np.array([s.split() for s in sent2], dtype=object)[not_empty_idx]
             # sort data by length to minimize padding in batcher
             sorted_data = sorted(zip(sent1, sent2, gs_scores),
                                  key=lambda z: (len(z[0]), len(z[1]), z[2]))
@@ -201,7 +201,7 @@ class STSBenchmarkFinetune(SICKEval):
 
         sick_data['y'] = [float(s) for s in sick_data['y']]
         return sick_data
-        
+
 class SICKRelatednessEval(STSEval):
     def __init__(self, task_path, seed=1111):
         logging.debug('\n\n***** Transfer task : SICKRelatedness*****\n\n')
@@ -212,7 +212,7 @@ class SICKRelatednessEval(STSEval):
         test = self.loadFile(os.path.join(task_path, 'SICK_test_annotated.txt'))
         self.datasets = ['train', 'dev', 'test']
         self.data = {'train': train, 'dev': dev, 'test': test}
-    
+
     def loadFile(self, fpath):
         skipFirstLine = True
         sick_data = {'X_A': [], 'X_B': [], 'y': []}
