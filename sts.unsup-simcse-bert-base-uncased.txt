@@ -1,0 +1,127 @@
+2023-06-12 06:18:34,630 : Starting new HTTPS connection (1): huggingface.co:443
+2023-06-12 06:18:34,856 : https://huggingface.co:443 "HEAD /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/config.json HTTP/1.1" 200 0
+2023-06-12 06:18:35,184 : https://huggingface.co:443 "HEAD /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-06-12 06:18:35,185 : Attempting to acquire lock 140282657306848 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/d1c2ee39eee210f7a0760a71342a7fe304c61ae8ba7274e73aff437eb64c84ac.lock
+2023-06-12 06:18:35,185 : Lock 140282657306848 acquired on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/d1c2ee39eee210f7a0760a71342a7fe304c61ae8ba7274e73aff437eb64c84ac.lock
+2023-06-12 06:18:35,187 : Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2023-06-12 06:18:35,977 : https://cdn-lfs.huggingface.co:443 "GET /princeton-nlp/unsup-simcse-bert-base-uncased/d1c2ee39eee210f7a0760a71342a7fe304c61ae8ba7274e73aff437eb64c84ac?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1686777515&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3ByaW5jZXRvbi1ubHAvdW5zdXAtc2ltY3NlLWJlcnQtYmFzZS11bmNhc2VkL2QxYzJlZTM5ZWVlMjEwZjdhMDc2MGE3MTM0MmE3ZmUzMDRjNjFhZThiYTcyNzRlNzNhZmY0MzdlYjY0Yzg0YWM~cmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2Nzc3NTE1fX19XX0_&Signature=TD57Ep96OrAEA93D6NsXVpTIDFO~Ddb0Evlnz-aOGteoEh4JZHLJ5z4dhBxc4vFKXMtd~gRS-NKg9AnsiucoBboTt43KAQX3qoQMKXCyYUsBUcFe5r3l~VF1eL7RQhobnWRAEPyAAIv13Zqe7Q~r2gSmxISK3v7NmIVKHDS3RwNLvkiF7joOwxSN0Eu-Ai2r7gIFrYrzxslqo0vWFp6MKmjaB0332gHSRImSA9geq3B1FYtNEKlUvMJP8QXSj6wrrxzirot2rcWZJuRPNhBu5rJh4ycnERCts5mXD3LSkr~k51JVkO8N7NRrpSyY3IkaSnTMTvxmxI2Q0S1RorYYsA__&Key-Pair-Id=KVTP0A1DKRTAX HTTP/1.1" 200 437998343
+Downloading pytorch_model.bin:   0%|          | 0.00/438M [00:00<?, ?B/s]Downloading pytorch_model.bin:   2%|▏         | 10.5M/438M [00:02<02:01, 3.51MB/s]Downloading pytorch_model.bin:   5%|▍         | 21.0M/438M [00:05<01:38, 4.23MB/s]Downloading pytorch_model.bin:   7%|▋         | 31.5M/438M [00:07<01:39, 4.08MB/s]Downloading pytorch_model.bin:  10%|▉         | 41.9M/438M [00:10<01:37, 4.08MB/s]Downloading pytorch_model.bin:  12%|█▏        | 52.4M/438M [00:12<01:30, 4.27MB/s]Downloading pytorch_model.bin:  14%|█▍        | 62.9M/438M [00:15<01:27, 4.29MB/s]Downloading pytorch_model.bin:  17%|█▋        | 73.4M/438M [00:17<01:25, 4.27MB/s]Downloading pytorch_model.bin:  19%|█▉        | 83.9M/438M [00:19<01:22, 4.31MB/s]Downloading pytorch_model.bin:  22%|██▏       | 94.4M/438M [00:21<01:15, 4.54MB/s]Downloading pytorch_model.bin:  24%|██▍       | 105M/438M [00:24<01:15, 4.40MB/s] Downloading pytorch_model.bin:  26%|██▋       | 115M/438M [00:26<01:13, 4.40MB/s]Downloading pytorch_model.bin:  29%|██▊       | 126M/438M [00:29<01:11, 4.35MB/s]Downloading pytorch_model.bin:  31%|███       | 136M/438M [00:31<01:10, 4.31MB/s]Downloading pytorch_model.bin:  34%|███▎      | 147M/438M [00:34<01:05, 4.44MB/s]Downloading pytorch_model.bin:  36%|███▌      | 157M/438M [00:36<01:04, 4.34MB/s]Downloading pytorch_model.bin:  38%|███▊      | 168M/438M [00:39<01:03, 4.28MB/s]Downloading pytorch_model.bin:  41%|████      | 178M/438M [00:41<00:59, 4.36MB/s]Downloading pytorch_model.bin:  43%|████▎     | 189M/438M [00:43<00:55, 4.53MB/s]Downloading pytorch_model.bin:  45%|████▌     | 199M/438M [00:45<00:51, 4.63MB/s]Downloading pytorch_model.bin:  48%|████▊     | 210M/438M [00:47<00:49, 4.58MB/s]Downloading pytorch_model.bin:  50%|█████     | 220M/438M [00:50<00:48, 4.47MB/s]Downloading pytorch_model.bin:  53%|█████▎    | 231M/438M [00:52<00:45, 4.54MB/s]Downloading pytorch_model.bin:  55%|█████▌    | 241M/438M [00:55<00:43, 4.55MB/s]Downloading pytorch_model.bin:  57%|█████▋    | 252M/438M [00:57<00:43, 4.25MB/s]Downloading pytorch_model.bin:  60%|█████▉    | 262M/438M [00:59<00:39, 4.47MB/s]Downloading pytorch_model.bin:  62%|██████▏   | 273M/438M [01:02<00:38, 4.27MB/s]Downloading pytorch_model.bin:  65%|██████▍   | 283M/438M [01:04<00:35, 4.37MB/s]Downloading pytorch_model.bin:  67%|██████▋   | 294M/438M [01:07<00:34, 4.20MB/s]Downloading pytorch_model.bin:  69%|██████▉   | 304M/438M [01:09<00:31, 4.28MB/s]Downloading pytorch_model.bin:  72%|███████▏  | 315M/438M [01:12<00:28, 4.30MB/s]Downloading pytorch_model.bin:  74%|███████▍  | 325M/438M [01:15<00:27, 4.18MB/s]Downloading pytorch_model.bin:  77%|███████▋  | 336M/438M [01:17<00:23, 4.35MB/s]Downloading pytorch_model.bin:  79%|███████▉  | 346M/438M [01:20<00:22, 4.07MB/s]Downloading pytorch_model.bin:  81%|████████▏ | 357M/438M [01:22<00:19, 4.23MB/s]Downloading pytorch_model.bin:  84%|████████▍ | 367M/438M [01:24<00:16, 4.26MB/s]Downloading pytorch_model.bin:  86%|████████▌ | 377M/438M [01:27<00:14, 4.18MB/s]Downloading pytorch_model.bin:  89%|████████▊ | 388M/438M [01:29<00:11, 4.19MB/s]Downloading pytorch_model.bin:  91%|█████████ | 398M/438M [01:32<00:09, 4.27MB/s]Downloading pytorch_model.bin:  93%|█████████▎| 409M/438M [01:34<00:06, 4.33MB/s]Downloading pytorch_model.bin:  96%|█████████▌| 419M/438M [01:36<00:04, 4.40MB/s]Downloading pytorch_model.bin:  98%|█████████▊| 430M/438M [01:39<00:01, 4.48MB/s]Downloading pytorch_model.bin: 100%|██████████| 438M/438M [01:41<00:00, 4.41MB/s]Downloading pytorch_model.bin: 100%|██████████| 438M/438M [01:41<00:00, 4.33MB/s]
+2023-06-12 06:20:17,093 : Attempting to release lock 140282657306848 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/d1c2ee39eee210f7a0760a71342a7fe304c61ae8ba7274e73aff437eb64c84ac.lock
+2023-06-12 06:20:17,093 : Lock 140282657306848 released on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/d1c2ee39eee210f7a0760a71342a7fe304c61ae8ba7274e73aff437eb64c84ac.lock
+2023-06-12 06:20:19,482 : https://huggingface.co:443 "HEAD /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-06-12 06:20:19,483 : Attempting to acquire lock 140281882926080 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/cd79adc84d3c96daa03456853766c63141aef734.lock
+2023-06-12 06:20:19,483 : Lock 140281882926080 acquired on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/cd79adc84d3c96daa03456853766c63141aef734.lock
+2023-06-12 06:20:19,648 : https://huggingface.co:443 "GET /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 252
+Downloading (…)okenizer_config.json:   0%|          | 0.00/252 [00:00<?, ?B/s]Downloading (…)okenizer_config.json: 100%|██████████| 252/252 [00:00<00:00, 2.27MB/s]
+2023-06-12 06:20:19,649 : Attempting to release lock 140281882926080 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/cd79adc84d3c96daa03456853766c63141aef734.lock
+2023-06-12 06:20:19,649 : Lock 140281882926080 released on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/cd79adc84d3c96daa03456853766c63141aef734.lock
+2023-06-12 06:20:20,158 : https://huggingface.co:443 "HEAD /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+2023-06-12 06:20:20,159 : Attempting to acquire lock 140281879357392 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2023-06-12 06:20:20,159 : Lock 140281879357392 acquired on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2023-06-12 06:20:20,330 : https://huggingface.co:443 "GET /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/vocab.txt HTTP/1.1" 200 231508
+Downloading (…)solve/main/vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]Downloading (…)solve/main/vocab.txt: 100%|██████████| 232k/232k [00:00<00:00, 790kB/s]Downloading (…)solve/main/vocab.txt: 100%|██████████| 232k/232k [00:00<00:00, 789kB/s]
+2023-06-12 06:20:20,624 : Attempting to release lock 140281879357392 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2023-06-12 06:20:20,624 : Lock 140281879357392 released on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2023-06-12 06:20:21,088 : https://huggingface.co:443 "HEAD /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/tokenizer.json HTTP/1.1" 404 0
+2023-06-12 06:20:21,262 : https://huggingface.co:443 "HEAD /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-06-12 06:20:21,423 : https://huggingface.co:443 "HEAD /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-06-12 06:20:21,424 : Attempting to acquire lock 140281879355856 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2023-06-12 06:20:21,424 : Lock 140281879355856 acquired on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2023-06-12 06:20:21,591 : https://huggingface.co:443 "GET /princeton-nlp/unsup-simcse-bert-base-uncased/resolve/main/special_tokens_map.json HTTP/1.1" 200 112
+Downloading (…)cial_tokens_map.json:   0%|          | 0.00/112 [00:00<?, ?B/s]Downloading (…)cial_tokens_map.json: 100%|██████████| 112/112 [00:00<00:00, 809kB/s]
+2023-06-12 06:20:21,592 : Attempting to release lock 140281879355856 on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2023-06-12 06:20:21,593 : Lock 140281879355856 released on /home/kampersanda/.cache/huggingface/hub/models--princeton-nlp--unsup-simcse-bert-base-uncased/blobs/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2023-06-12 06:20:27,455 : ***** Transfer task : STS12 *****
+
+
+2023-06-12 06:20:32,146 : MSRpar : pearson = 0.6306, spearman = 0.6426
+2023-06-12 06:20:32,714 : MSRvid : pearson = 0.8574, spearman = 0.8513
+2023-06-12 06:20:33,228 : SMTeuroparl : pearson = 0.5256, spearman = 0.6152
+2023-06-12 06:20:34,161 : surprise.OnWN : pearson = 0.7370, spearman = 0.6977
+2023-06-12 06:20:34,694 : surprise.SMTnews : pearson = 0.6551, spearman = 0.5808
+2023-06-12 06:20:34,696 : ALL : Pearson = 0.7284,             Spearman = 0.6604
+2023-06-12 06:20:34,696 : ALL (weighted average) : Pearson = 0.6986,             Spearman = 0.6943
+2023-06-12 06:20:34,696 : ALL (average) : Pearson = 0.6811,             Spearman = 0.6775
+
+2023-06-12 06:20:34,698 : ***** Transfer task : STS13 (-SMT) *****
+
+
+2023-06-12 06:20:35,140 : FNWN : pearson = 0.6220, spearman = 0.6409
+2023-06-12 06:20:35,791 : headlines : pearson = 0.7852, spearman = 0.7904
+2023-06-12 06:20:36,324 : OnWN : pearson = 0.8646, spearman = 0.8377
+2023-06-12 06:20:36,326 : ALL : Pearson = 0.8112,             Spearman = 0.8149
+2023-06-12 06:20:36,326 : ALL (weighted average) : Pearson = 0.7943,             Spearman = 0.7893
+2023-06-12 06:20:36,326 : ALL (average) : Pearson = 0.7573,             Spearman = 0.7563
+
+2023-06-12 06:20:36,327 : ***** Transfer task : STS14 *****
+
+
+2023-06-12 06:20:36,927 : deft-forum : pearson = 0.5920, spearman = 0.5762
+2023-06-12 06:20:37,473 : deft-news : pearson = 0.7875, spearman = 0.7516
+2023-06-12 06:20:38,222 : headlines : pearson = 0.7692, spearman = 0.7587
+2023-06-12 06:20:38,936 : images : pearson = 0.8154, spearman = 0.7784
+2023-06-12 06:20:39,676 : OnWN : pearson = 0.8793, spearman = 0.8508
+2023-06-12 06:20:40,638 : tweet-news : pearson = 0.7961, spearman = 0.7229
+2023-06-12 06:20:40,640 : ALL : Pearson = 0.7731,             Spearman = 0.7361
+2023-06-12 06:20:40,640 : ALL (weighted average) : Pearson = 0.7861,             Spearman = 0.7514
+2023-06-12 06:20:40,640 : ALL (average) : Pearson = 0.7733,             Spearman = 0.7398
+
+2023-06-12 06:20:40,642 : ***** Transfer task : STS15 *****
+
+
+2023-06-12 06:20:41,297 : answers-forums : pearson = 0.7721, spearman = 0.7765
+2023-06-12 06:20:42,007 : answers-students : pearson = 0.7317, spearman = 0.7350
+2023-06-12 06:20:42,683 : belief : pearson = 0.8152, spearman = 0.8333
+2023-06-12 06:20:43,452 : headlines : pearson = 0.8142, spearman = 0.8195
+2023-06-12 06:20:44,179 : images : pearson = 0.8470, spearman = 0.8617
+2023-06-12 06:20:44,181 : ALL : Pearson = 0.7895,             Spearman = 0.7972
+2023-06-12 06:20:44,181 : ALL (weighted average) : Pearson = 0.7966,             Spearman = 0.8053
+2023-06-12 06:20:44,181 : ALL (average) : Pearson = 0.7960,             Spearman = 0.8052
+
+2023-06-12 06:20:44,183 : ***** Transfer task : STS16 *****
+
+
+2023-06-12 06:20:44,502 : answer-answer : pearson = 0.6827, spearman = 0.6806
+2023-06-12 06:20:44,737 : headlines : pearson = 0.8009, spearman = 0.8183
+2023-06-12 06:20:45,033 : plagiarism : pearson = 0.8481, spearman = 0.8579
+2023-06-12 06:20:45,513 : postediting : pearson = 0.8488, spearman = 0.8623
+2023-06-12 06:20:45,731 : question-question : pearson = 0.7038, spearman = 0.7008
+2023-06-12 06:20:45,732 : ALL : Pearson = 0.7698,             Spearman = 0.7812
+2023-06-12 06:20:45,732 : ALL (weighted average) : Pearson = 0.7775,             Spearman = 0.7848
+2023-06-12 06:20:45,732 : ALL (average) : Pearson = 0.7769,             Spearman = 0.7840
+
+2023-06-12 06:20:45,733 : 
+
+***** Transfer task : STSBenchmark*****
+
+
+2023-06-12 06:20:53,619 : train : pearson = 0.7895, spearman = 0.7693
+2023-06-12 06:20:55,915 : dev : pearson = 0.8136, spearman = 0.8172
+2023-06-12 06:20:57,832 : test : pearson = 0.7733, spearman = 0.7652
+2023-06-12 06:20:57,835 : ALL : Pearson = 0.7916,             Spearman = 0.7806
+2023-06-12 06:20:57,836 : ALL (weighted average) : Pearson = 0.7911,             Spearman = 0.7770
+2023-06-12 06:20:57,836 : ALL (average) : Pearson = 0.7922,             Spearman = 0.7839
+
+2023-06-12 06:20:57,840 : 
+
+***** Transfer task : SICKRelatedness*****
+
+
+2023-06-12 06:21:02,798 : train : pearson = 0.7994, spearman = 0.7245
+2023-06-12 06:21:03,427 : dev : pearson = 0.7870, spearman = 0.7422
+2023-06-12 06:21:08,995 : test : pearson = 0.7916, spearman = 0.7186
+2023-06-12 06:21:08,998 : ALL : Pearson = 0.7950,             Spearman = 0.7224
+2023-06-12 06:21:08,999 : ALL (weighted average) : Pearson = 0.7949,             Spearman = 0.7224
+2023-06-12 06:21:08,999 : ALL (average) : Pearson = 0.7927,             Spearman = 0.7284
+
+------ test ------
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| STS12 | STS13 | STS14 | STS15 | STS16 | STSBenchmark | SICKRelatedness |  Avg. |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| 66.04 | 81.49 | 73.61 | 79.72 | 78.12 |    76.52     |      71.86      | 75.34 |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
++------+------+------+------+------+------+------+------+
+|  MR  |  CR  | SUBJ | MPQA | SST2 | TREC | MRPC | Avg. |
++------+------+------+------+------+------+------+------+
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
++------+------+------+------+------+------+------+------+
