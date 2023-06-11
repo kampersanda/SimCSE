@@ -11,7 +11,7 @@ Wait a minute! The authors are working day and night 💪, to make the code and 
 We anticipate the code will be out * **in one week** *. -->
 
 <!-- * 4/26: SimCSE is now on [Gradio Web Demo](https://gradio.app/g/AK391/SimCSE) (Thanks [@AK391](https://github.com/AK391)!). Try it out! -->
-* 8/31: Our paper has been accepted to EMNLP! Please check out our [updated paper](https://arxiv.org/pdf/2104.08821.pdf) (with updated numbers and baselines). 
+* 8/31: Our paper has been accepted to EMNLP! Please check out our [updated paper](https://arxiv.org/pdf/2104.08821.pdf) (with updated numbers and baselines).
 * 5/12: We updated our [unsupervised models](#model-list) with new hyperparameters and better performance.
 * 5/10: We released our [sentence embedding tool](#getting-started) and [demo code](./demo).
 * 4/23: We released our [training code](#training).
@@ -21,17 +21,19 @@ We anticipate the code will be out * **in one week** *. -->
 
 ## Quick Links
 
-  - [Overview](#overview)
-  - [Getting Started](#getting-started)
-  - [Model List](#model-list)
-  - [Use SimCSE with Huggingface](#use-simcse-with-huggingface)
-  - [Train SimCSE](#train-simcse)
-    - [Requirements](#requirements)
-    - [Evaluation](#evaluation)
-    - [Training](#training)
-  - [Bugs or Questions?](#bugs-or-questions)
-  - [Citation](#citation)
-  - [SimCSE Elsewhere](#simcse-elsewhere)
+- [SimCSE: Simple Contrastive Learning of Sentence Embeddings](#simcse-simple-contrastive-learning-of-sentence-embeddings)
+- [Quick Links](#quick-links)
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Model List](#model-list)
+- [Use SimCSE with Huggingface](#use-simcse-with-huggingface)
+- [Train SimCSE](#train-simcse)
+  - [Requirements](#requirements)
+  - [Evaluation](#evaluation)
+  - [Training](#training)
+- [Bugs or questions?](#bugs-or-questions)
+- [Citation](#citation)
+- [SimCSE Elsewhere](#simcse-elsewhere)
 
 ## Overview
 
@@ -58,7 +60,7 @@ After installing the package, you can load our model by just two lines of code
 from simcse import SimCSE
 model = SimCSE("princeton-nlp/sup-simcse-bert-base-uncased")
 ```
-See [model list](#model-list) for a full list of available models. 
+See [model list](#model-list) for a full list of available models.
 
 Then you can use our model for **encoding sentences into embeddings**
 ```python
@@ -83,21 +85,21 @@ We also support [faiss](https://github.com/facebookresearch/faiss), an efficient
 
 **WARNING**: We have found that `faiss` did not well support Nvidia AMPERE GPUs (3090 and A100). In that case, you should change to other GPUs or install the CPU version of `faiss` package.
 
-We also provide an easy-to-build [demo website](./demo) to show how SimCSE can be used in sentence retrieval. The code is based on [DensePhrases](https://arxiv.org/abs/2012.12624)' [repo](https://github.com/princeton-nlp/DensePhrases) and [demo](http://densephrases.korea.ac.kr) (a lot of thanks to the authors of DensePhrases). 
+We also provide an easy-to-build [demo website](./demo) to show how SimCSE can be used in sentence retrieval. The code is based on [DensePhrases](https://arxiv.org/abs/2012.12624)' [repo](https://github.com/princeton-nlp/DensePhrases) and [demo](http://densephrases.korea.ac.kr) (a lot of thanks to the authors of DensePhrases).
 
 ## Model List
 
-Our released models are listed as following. You can import these models by using the `simcse` package or using [HuggingFace's Transformers](https://github.com/huggingface/transformers). 
-|              Model              | Avg. STS |
-|:-------------------------------|:--------:|
-|  [princeton-nlp/unsup-simcse-bert-base-uncased](https://huggingface.co/princeton-nlp/unsup-simcse-bert-base-uncased) |   76.25 |
-| [princeton-nlp/unsup-simcse-bert-large-uncased](https://huggingface.co/princeton-nlp/unsup-simcse-bert-large-uncased) |   78.41  |
-|    [princeton-nlp/unsup-simcse-roberta-base](https://huggingface.co/princeton-nlp/unsup-simcse-roberta-base)    |   76.57  |
-|    [princeton-nlp/unsup-simcse-roberta-large](https://huggingface.co/princeton-nlp/unsup-simcse-roberta-large)   |   78.90  |
-|   [princeton-nlp/sup-simcse-bert-base-uncased](https://huggingface.co/princeton-nlp/sup-simcse-bert-base-uncased)  |   81.57  |
-|  [princeton-nlp/sup-simcse-bert-large-uncased](https://huggingface.co/princeton-nlp/sup-simcse-bert-large-uncased)  |   82.21  |
-|     [princeton-nlp/sup-simcse-roberta-base](https://huggingface.co/princeton-nlp/sup-simcse-roberta-base)     |   82.52  |
-|     [princeton-nlp/sup-simcse-roberta-large](https://huggingface.co/princeton-nlp/sup-simcse-roberta-large)    |   83.76  |
+Our released models are listed as following. You can import these models by using the `simcse` package or using [HuggingFace's Transformers](https://github.com/huggingface/transformers).
+| Model                                                                                                                 | Avg. STS |
+| :-------------------------------------------------------------------------------------------------------------------- | :------: |
+| [princeton-nlp/unsup-simcse-bert-base-uncased](https://huggingface.co/princeton-nlp/unsup-simcse-bert-base-uncased)   |  76.25   |
+| [princeton-nlp/unsup-simcse-bert-large-uncased](https://huggingface.co/princeton-nlp/unsup-simcse-bert-large-uncased) |  78.41   |
+| [princeton-nlp/unsup-simcse-roberta-base](https://huggingface.co/princeton-nlp/unsup-simcse-roberta-base)             |  76.57   |
+| [princeton-nlp/unsup-simcse-roberta-large](https://huggingface.co/princeton-nlp/unsup-simcse-roberta-large)           |  78.90   |
+| [princeton-nlp/sup-simcse-bert-base-uncased](https://huggingface.co/princeton-nlp/sup-simcse-bert-base-uncased)       |  81.57   |
+| [princeton-nlp/sup-simcse-bert-large-uncased](https://huggingface.co/princeton-nlp/sup-simcse-bert-large-uncased)     |  82.21   |
+| [princeton-nlp/sup-simcse-roberta-base](https://huggingface.co/princeton-nlp/sup-simcse-roberta-base)                 |  82.52   |
+| [princeton-nlp/sup-simcse-roberta-large](https://huggingface.co/princeton-nlp/sup-simcse-roberta-large)               |  83.76   |
 
 Note that the results are slightly better than what we have reported in the current version of the paper after adopting a new set of hyperparameters (for hyperparamters, see the [training](#training) section).
 
@@ -160,6 +162,15 @@ pip install torch==1.7.1
 Then run the following script to install the remaining dependencies,
 
 ```bash
+pip install -r requirements.txt
+```
+
+(Added)
+
+```
+python -m venv venv
+source venv/bin/activate
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install -r requirements.txt
 ```
 
@@ -237,11 +248,11 @@ For results in the paper, we use Nvidia 3090 GPUs with CUDA 11. Using different 
 
 We use the following hyperparamters for training SimCSE:
 
-|               | Unsup. BERT | Unsup. RoBERTa | Sup.      |
-|:--------------|:-----------:|:--------------:|:---------:|
-| Batch size    | 64          | 512            | 512       |
-| Learning rate (base)  | 3e-5 | 1e-5 | 5e-5 |
-| Learning rate (large) | 1e-5 | 3e-5 | 1e-5 |
+|                       | Unsup. BERT | Unsup. RoBERTa | Sup.  |
+| :-------------------- | :---------: | :------------: | :---: |
+| Batch size            |     64      |      512       |  512  |
+| Learning rate (base)  |    3e-5     |      1e-5      | 5e-5  |
+| Learning rate (large) |    1e-5     |      3e-5      | 1e-5  |
 
 
 **Convert models**
